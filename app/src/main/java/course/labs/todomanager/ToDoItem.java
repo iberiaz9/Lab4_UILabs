@@ -135,8 +135,6 @@ public class ToDoItem {
 	}
 
 	public String toString() {
-		mNote = mNote.replaceAll("\n", " ");
-		
 		return mTitle + ITEM_SEP + mPriority + ITEM_SEP + mStatus + ITEM_SEP
 				+ FORMAT.format(mDate) + ITEM_SEP + mNote;
 	}

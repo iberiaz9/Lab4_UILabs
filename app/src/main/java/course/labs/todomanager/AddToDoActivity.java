@@ -194,7 +194,7 @@ public class AddToDoActivity extends Activity {
 				String titleString = getToDoTitle();
 
 				// Added note to program 9/23/16
-				String note = getToDoNote();
+				String note = getToDoNote().replaceAll("\n", " ");
 
 				// Construct the Date string
 				String fullDate = dateString + " " + timeString;

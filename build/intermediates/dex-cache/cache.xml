@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Iberia\Documents\GitHub\Lab4_UILabs\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="874c71c2e429ce4cc778127c88afefbeec2f0352">
+        <dex dex="C:\Users\Iberia\Documents\GitHub\Lab4_UILabs\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_78186da09bb43b1249306ac198545101a31c193b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Iberia\Documents\GitHub\Lab4_UILabs\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a31eb04e5a1fc0d6e0dcd3a947657d1310a03caa">
+        <dex dex="C:\Users\Iberia\Documents\GitHub\Lab4_UILabs\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_908f82e2a1fd87d97afcf52002db34aed64e6b53\classes.dex" />
+    </item>
+
+</items>

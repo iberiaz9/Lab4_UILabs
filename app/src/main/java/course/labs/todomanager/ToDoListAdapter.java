@@ -128,7 +128,7 @@ public class ToDoListAdapter extends BaseAdapter {
 		statusView.setChecked(ToDoItem.Status.DONE.equals(toDoItem.getStatus()));
 
 		mDate = new Date();
-		if (toDoItem.getDate().before(mDate) && !statusView.isChecked()) {
+		if (toDoItem.getDate().before(mDate) && toDoItem.getStatus() == ToDoItem.Status.NOTDONE) {
 			overDueChkBox.setChecked(true);
 		}
 
@@ -140,11 +140,11 @@ public class ToDoListAdapter extends BaseAdapter {
 					public void onCheckedChanged(CompoundButton buttonView,
 							boolean isChecked) {
 
-                        if (statusView.isChecked()) {
+                        if (isChecked) {
                             toDoItem.setStatus(ToDoItem.Status.DONE);
                             overDueChkBox.setChecked(false);
                         }
-                        else if (!statusView.isChecked()) {
+                        else {
                             toDoItem.setStatus(ToDoItem.Status.NOTDONE);
                             if (toDoItem.getDate().before(mDate)) {
                                 overDueChkBox.setChecked(true);
